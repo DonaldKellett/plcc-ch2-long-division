@@ -8,4 +8,4 @@ In the end of Chapter 2 of [Program Logics for Certified Compilers (PLCC)](https
 
 ## Credits
 
-The long division algorithm is taken from a [free excerpt of PLCC](https://vst.cs.princeton.edu/download/PLCC-to-chapter-3.pdf) while the toy programming language used in this repo is a variant of the Imp programming language which has its origins in [Software Foundations](https://softwarefoundations.cis.upenn.edu), an excellent resource for learning Coq.
+The long division algorithm is taken from a [free excerpt of PLCC](https://vst.cs.princeton.edu/download/PLCC-to-chapter-3.pdf) while the toy programming language used in this repo is a variant of Imp in [Software Foundations](https://softwarefoundations.cis.upenn.edu), an excellent resource for learning Coq.
