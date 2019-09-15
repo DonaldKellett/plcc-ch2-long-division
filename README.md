@@ -2,6 +2,14 @@
 
 Formal proof of correctness of long division algorithm as appearing in PLCC Chapter 2, modelled within an Imp variant
 
+## How to build
+
+### Using CoqIDE 8.9.x on a Mac
+
+Fire up your terminal, change directory to your local copy of this repo and run `coq_makefile -f _CoqProject -o Makefile`, then open any vernacular file from this repo in your CoqIDE and select `Compile > Make`.
+
+*N.B. The terminal workaround is necessary for generating the correct Makefile due to [coq/coq#10736](https://github.com/coq/coq/issues/10736).*
+
 ## Spoiler Alert
 
 In the end of Chapter 2 of [Program Logics for Certified Compilers (PLCC)](https://vst.cs.princeton.edu/download/PLCC-to-chapter-3.pdf), the reader is advised to work through the steps of the proof involving the correctness of the long division algorithm shown here (or consult a detailed proof referenced by the book). You are advised not to peek at the contents of this repo until you have at least made an attempt at proving it yourself, though it is not mandatory to do so.
