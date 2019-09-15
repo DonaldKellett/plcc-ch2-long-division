@@ -1,11 +1,8 @@
-(* A direct port of the core definitions found in Total and
-   Partial Maps (Maps) of Logical Foundations:
+(* Adapted with minimal modifications from Total and Partial
+   Maps (Maps) of Logical Foundations:
    https://softwarefoundations.cis.upenn.edu/lf-current/Maps.html *)
 
 From Coq Require Import Strings.String.
-
-Definition eqb_string (x y : string) : bool :=
-  if string_dec x y then true else false.
 
 Definition total_map (A : Type) := string -> A.
 
@@ -14,7 +11,7 @@ Definition t_empty {A : Type} (v : A) : total_map A :=
 
 Definition t_update {A : Type} (m : total_map A)
                     (x : string) (v : A) :=
-  fun x' => if eqb_string x x' then v else m x'.
+  fun x' => if string_dec x x' then v else m x'.
 
 Notation "'_' '!->' v" := (t_empty v)
   (at level 100, right associativity).
