@@ -2,6 +2,16 @@
 
 Formal proof of correctness of long division algorithm as appearing in PLCC Chapter 2, modelled within an Imp variant
 
+## File Synopsis
+
+This project consists of the following files (excluding `README.md`, `LICENSE` and `.gitignore`):
+
+- `_CoqProject` - used for generating the Makefile to build this project
+- `Maps.v` - total maps
+- `Imp.v` - the Imp programming language (variant)
+- `Hoare.v` - proof rules for reasoning about Imp programs
+- `LongDivision.v` - the long division algorithm in Imp and its proof of correctness
+
 ## How to build
 
 ### Using CoqIDE 8.9.x on a Mac

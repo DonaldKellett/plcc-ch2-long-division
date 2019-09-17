@@ -42,8 +42,8 @@ Proof with auto.
 Qed.
 
 Theorem hoare_consequence : forall P P' Q Q' c,
-  {{ P' }} c {{ Q' }} ->
   P ->> P' ->
+  {{ P' }} c {{ Q' }} ->
   Q' ->> Q ->
   {{ P }} c {{ Q }}.
 Proof. unfold hoare_triple; eauto. Qed.

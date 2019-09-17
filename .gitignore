@@ -4,3 +4,4 @@ Makefile
 Makefile.conf
 .coqdeps.d
 *.aux
+*.cache
